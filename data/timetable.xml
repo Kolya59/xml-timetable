@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<timetable
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+        xsd:noNamespaceSchemaLocation="timetable.xsd"
+>
+    <dayOfWeek name="Понедельник">
+        <subject start="15:15" end="16:45" name="Технологии разработки приложений для мобильных платформ">
+            <lecturer>Юрков К.А.</lecturer>
+            <kind>Практика</kind>
+            <auditory>237</auditory>
+        </subject>
+
+        <subject start="17:00" end="18:35" name="Технологии разработки приложений для мобильных платформ">
+            <lecturer>Юрков К.А.</lecturer>
+            <kind>Лабораторная</kind>
+            <auditory>237</auditory>
+        </subject>
+    </dayOfWeek>
+
+    <dayOfWeek name="Вторник">
+        <subject start="8:00" end="9:35" name="Методы искусственного интеллекта">
+            <lecturer>Ясницкий Л.Н.</lecturer>
+            <kind>Практика</kind>
+            <auditory>519</auditory>
+        </subject>
+    </dayOfWeek>
+
+    <dayOfWeek name="Среда">
+        <subject start="11:30" end="13:05" name="Методика преподавания информатики и информационных технологий">
+            <lecturer>Соловьёва Т.Н.</lecturer>
+            <kind>Лекция</kind>
+            <auditory>407</auditory>
+        </subject>
+    </dayOfWeek>
+
+    <dayOfWeek name="Четверг">
+        <subject start="8:00" end="9:35" name="Операционная система UNIX">
+            <lecturer>Анисимов А.О.</lecturer>
+            <kind>Лабораторная</kind>
+            <auditory>239</auditory>
+        </subject>
+
+        <subject start="8:00" end="9:35" name="Семантические технологии обработки текстовых документов">
+            <lecturer>Ланин В.В.</lecturer>
+            <kind>Лекция</kind>
+            <auditory>408</auditory>
+        </subject>
+
+        <subject start="8:00" end="9:35" name="Операционная система UNIX">
+            <lecturer>Анисимов А.О.</lecturer>
+            <kind>Практика</kind>
+            <auditory>427</auditory>
+        </subject>
+
+        <subject start="8:00" end="9:35" name="Операционная система UNIX">
+            <lecturer>Анисимов А.О.</lecturer>
+            <kind>Лабораторная</kind>
+            <auditory>239</auditory>
+        </subject>
+    </dayOfWeek>
+
+
+    <dayOfWeek name="Пятница">
+        <subject start="8:00" end="9:35" name="Операционная система UNIX">
+            <lecturer>Анисимов А.О.</lecturer>
+            <kind>Лабораторная</kind>
+            <auditory>239</auditory>
+        </subject>
+
+        <subject start="11:30" end="13:05" name="Прикладная теория графов">
+            <lecturer>Дураков А.В.</lecturer>
+            <kind>Практика</kind>
+            <auditory>239</auditory>
+        </subject>
+    </dayOfWeek>
+</timetable>

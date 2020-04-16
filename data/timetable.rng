@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="timetable">
+            <attribute name="xsd:noNamespaceSchemaLocation">
+                <data type="NCName"/>
+            </attribute>
+            <oneOrMore>
+                <element name="dayOfWeek">
+                    <attribute name="name">
+                        <data type="NCName"/>
+                    </attribute>
+                    <oneOrMore>
+                        <element name="subject">
+                            <attribute name="end">
+                                <data type="NMTOKEN"/>
+                            </attribute>
+                            <attribute name="name"/>
+                            <attribute name="start">
+                                <data type="NMTOKEN"/>
+                            </attribute>
+                            <element name="lecturer">
+                                <text/>
+                            </element>
+                            <element name="type">
+                                <data type="NCName"/>
+                            </element>
+                            <element name="auditory">
+                                <data type="integer"/>
+                            </element>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </oneOrMore>
+        </element>
+    </start>
+</grammar>

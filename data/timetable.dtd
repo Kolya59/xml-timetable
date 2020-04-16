@@ -1,0 +1,13 @@
+<!ELEMENT timetable (dayOfWeek+)>
+<!ELEMENT dayOfWeek (subject+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT lecturer (#PCDATA)>
+<!ELEMENT kind (#PCDATA)>
+<!ELEMENT auditory (#PCDATA)>
+<!ATTLIST dayOfWeek
+        name CDATA #REQUIRED>
+<!ELEMENT subject (lecturer, kind, auditory)>
+<!ATTLIST subject
+        start CDATA #REQUIRED
+        end CDATA #REQUIRED
+        name CDATA #REQUIRED>
