@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (xml-timetable)" project-jdk-type="Python SDK" />
+  <component name="ProjectResources">
+    <resource url="http://www.w3.org/2005/xpath-functions" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="Pipenv (Lanin)" project-jdk-type="Python SDK" />
 </project>
