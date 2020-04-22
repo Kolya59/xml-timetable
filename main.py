@@ -15,31 +15,31 @@ def constant(f):
 class XPathQuery(object):
     @constant
     def GET_LESSONS() -> str:
-        return '//day/lesson/name/text()'
+        return '/timetable/dayOfWeek/subject/@name'
 
     @constant
     def GET_AUDIENCE():
-        return '//day/lesson/auditory/text()'
+        return '/timetable/dayOfWeek/subject/auditory/text()'
 
     @constant
     def GET_PRACTICALS():
-        return '//day/lesson[type="Практика"]/name/text()'
+        return '/timetable/dayOfWeek/subject[type="Практика"]/@name'
 
     @constant
     def GET_LECTURES_FROM_239():
-        return '//day/lesson[type="Лекция" and auditory="239 (2 корпус, 2 этаж)"]/name/text()'
+        return '/timetable/dayOfWeek/subject[type="Лекция" and auditory="239 (2 корпус, 2 этаж)"]/@name'
 
     @constant
     def GET_TEACHERS_FROM_239():
-        return '//day/lesson[auditory="239 (2 корпус, 2 этаж)"]/teacher/text()'
+        return '/timetable/dayOfWeek/subject[auditory="239 (2 корпус, 2 этаж)"]/lecturer/@name'
 
     @constant
     def GET_LAST_LESSONS():
-        return '//day/lesson[last()]/name/text()'
+        return '/timetable/dayOfWeek/subject[last()]/@name'
 
     @constant
     def GET_LESSONS_COUNT():
-        return 'count(//day/lesson)'
+        return 'count(/timetable/dayOfWeek/subject)'
 
 
 QUERIES = XPathQuery()

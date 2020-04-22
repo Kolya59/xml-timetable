@@ -20,7 +20,7 @@
                 <td>
                     <strong>Audience</strong>
                 </td>
-                <xsl:for-each select="shedule/dayOfWeek">
+                <xsl:for-each select="timetable/dayOfWeek">
                     <tr>
                         <td colspan="5">
                             <strong>
